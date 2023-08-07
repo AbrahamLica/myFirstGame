@@ -3,25 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu primeiro Game</title>
+    <title>My First Game</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/others/favicon.png" type="image/x-icon">
     <script src="player.js"></script>
     <script src="Scenario.js"></script>
-
-    <style>
-      body {
-        overflow-y: hidden;
-        overflow-x: hidden;
-      }
-    </style>
   </head>
   <body>
     <div class="mainContainer">
-
-      <button onclick="teste()">teste</button>
-
       <div class="ContainerStartScreenGame">
-        <p>Start Game</p>
+        <div class="buttonStart">
+          <h3>Start Game</h3>
+        </div>
       </div>
 
       <div class="canvas">
@@ -32,9 +25,26 @@
           </p>
         </canvas>
       </div>
-    </div>
 
-    
+      <footer>
+        <div class="leftFooter">
+          <p>Made by</p>
+          <a href="https://github.com/AbrahamLica" target="_blank"
+            >Abraham Licá</a
+          >
+          <img src="./assets/others/avatar.png" alt="meu avatar" />
+        </div>
+
+        <div class="rightFooter">
+          <p>I created this game inspired by the following game:</p>
+          <a
+            href="https://ansimuz.itch.io/sunny-land-pixel-game-art"
+            target="_blank"
+            >Click me</a
+          >
+        </div>
+      </footer>
+    </div>
   </body>
 
   <script src="index.js"></script>

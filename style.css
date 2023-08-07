@@ -1,36 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P";
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-}
-
-#canvas {
-    border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
 }
 
 .mainContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    /* background-color: red; */
-}
-
-.mainContainer button {
-    background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .ContainerStartScreenGame {
-    display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 15px;
+  background-image: url(./assets/others/background-home-screen.jpg);
+  background-repeat: none;
+  background-size: cover;
 }
 
+.buttonStart {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonStart p {
+  background: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  color: RGB(252, 184, 36);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: RGB(50, 44, 67);
+}
+
+h3 {
+  text-align: center;
+  font-family: Verdana;
+  color: #ffc310;
+  animation: blink-text 1.3s linear infinite;
+  font-size: 6em;
+}
+
+@keyframes blink-text {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* #canvas {
+  border: 1px solid black;
+} */
+
 .canvas {
-    display: block;
+  display: none;
+}
+
+footer {
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+.leftFooter {
+  /* background-color: blue; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftFooter a {
+  font-size: 20px;
+  color: RGB(252, 184, 36);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 3px 3px 2px black;
+}
+
+.rightFooter {
+  width: 50%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
+.rightFooter a {
+  font-size: 23px;
+  color: RGB(252, 184, 36);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 3px 3px 2px black;
+}
+
+footer p,
+a {
+  /* margin: 15px; */
+  text-decoration: none;
+  color: black;
+  letter-spacing: 5px;
+}
+
+footer img {
+  width: 100px;
 }

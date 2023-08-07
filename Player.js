@@ -26,11 +26,11 @@ class Player {
     //Animations properties ////////////////////////////////////////////////////////
 
     //General
-    this.basePath = './assets/mainCharacter/'
+    this.basePath = "./assets/mainCharacter/";
     this.isFacingLeft = false;
     this.isFacingRight = true;
     this.correctJumpSide = new Image();
-    this.correctJumpSide.src = `${this.basePath}player-jump-forward.png`;
+    this.correctJumpSide.src = "./assets/mainCharacter/player-jump-forward.png";
 
     //inicio (parado, virado para direita)
     this.character = new Image();
@@ -105,6 +105,13 @@ class Player {
       this.lastKeyPressed = "up";
     }
 
+    // Se a tecla baixo for pressionada
+    // else if (this.keyboard.down) {
+    //   this.lastKeyPressed = "down";
+    //   // this.correctJumpSide.src = this.correctJumpSide.src.substring(21)
+    //   // this.correctJumpSide.src = 'nada'
+    // }
+
     // se a tecla left for pressionada, ande para a esquerda
     if (this.keyboard.left) {
       if (this.posX <= 0) {
@@ -116,7 +123,6 @@ class Player {
         this.correctJumpSide.src =
           "./assets/mainCharacter/player-jump-back.png";
         this.isFacingRight = false;
-        console.log(this.correctJumpSide.src.replace(window.location.href, ""));
       }
     }
 
@@ -191,7 +197,7 @@ class Player {
       } else if (
         this.keyboard.down &&
         this.correctJumpSide.src ==
-          "http://127.0.0.1:5500/assets/mainCharacter/player-jump-forward.png"
+          "http://127.0.0.1:5501/assets/mainCharacter/player-jump-forward.png"
       ) {
         this.character.src = this.crouchedForwardCharacter.src;
         this.numSprites = 2;
@@ -199,7 +205,7 @@ class Player {
       } else if (
         this.keyboard.down &&
         this.correctJumpSide.src ==
-          "http://127.0.0.1:5500/assets/mainCharacter/player-jump-back.png"
+          "http://127.0.0.1:5501/assets/mainCharacter/player-jump-back.png"
       ) {
         this.character.src = this.crouchedBackCharacter.src;
         this.numSprites = 2;

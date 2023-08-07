@@ -1,5 +1,16 @@
 var canvas = document.querySelector("#canvas");
 var context = canvas.getContext("2d");
+var canvasDiv = document.querySelector(".canvas");
+var containerStartScreen = document.querySelector(".ContainerStartScreenGame");
+var buttonStart = document.querySelector(".buttonStart");
+var rightFooter = document.querySelector(".rightFooter");
+
+buttonStart.addEventListener("click", () => {
+  // canvasDiv.classList.add('show')
+  canvasDiv.style.display = "flex";
+  containerStartScreen.style.display = "none";
+  rightFooter.style.display = "flex";
+});
 
 const keyboard = {
   up: false,
@@ -83,6 +94,6 @@ function teste() {
   lastKeyPressed: ${player.lastKeyPressed}
   isFacingLeft: ${player.isFacingLeft}
   isFacingRight: ${player.isFacingRight}
-  correctJumpside: ${player.correctJumpSide.src}
+  correctjumpside: ${player.correctJumpSide.src}
   `);
 }

@@ -58,12 +58,6 @@ class Scenario {
   }
 
   drawHouses() {
-    // let widthSprite = 87;
-    // let heightSprite = 108;
-    // let posIniX = 0;
-    // let posIniY = 0;
-    // let posY = 376;
-    // let posX = 1150;
 
     context.drawImage(
       this.house, // imagem que vai ser renderizada
