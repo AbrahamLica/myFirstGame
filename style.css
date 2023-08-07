@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.mainContainer button {
+    background-color: white;
+}
+
+.ContainerStartScreenGame {
+    display: none;
+}
+
+.canvas {
+    display: block;
+}
